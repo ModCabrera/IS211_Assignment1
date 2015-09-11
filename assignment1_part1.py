@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Module Contains Modulo Divide Function"""
 
-def listDivide(numbers, divide=2):
+def list_divide(numbers, divide=2):
     """
     Args:
         numbers (list): List of Numbers to divide on.
@@ -32,7 +32,7 @@ class ListDivideException(Exception):
     pass
 
 
-def testListDivide():
+def test_list_divide():
     """
     Args:
         None
@@ -41,18 +41,18 @@ def testListDivide():
         None
 
     Examples:
-        >>> testlistDivide()
+        >>> test_list_divide()
         >>>
     """
     try:
-        listDivide([1, 2, 3, 4, 5])
-        listDivide([2, 4, 6, 8, 10])
-        listDivide([30, 54, 63, 98, 100], divide=10)
-        listDivide([0])
-        listDivide([1, 2, 3, 4, 5], 1)
+        list_divide([1, 2, 3, 4, 5])
+        list_divide([2, 4, 6, 8, 10])
+        list_divide([30, 54, 63, 98, 100], divide=10)
+        list_divide([0])
+        list_divide([1, 2, 3, 4, 5], 1)
     except:
         raise ListDivideException()
 
 
 if __name__ == '__main__':
-    testListDivide()
+    test_list_divide()
